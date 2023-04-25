@@ -1,0 +1,15 @@
+Explicação sobre o código desenvolvido sobre o metodo composite com um sistema de gerenciamento de arquivos em java, logo abaixo:
+
+1. Classe FileSystemComponent (Sistema de Arquivos Componentes)- interface que define o comportamento comum a todos os componentes do sistema de gerenciamento de arquivos.
+
+2. Classe File (Arquivo) - implementação da interface FileSystemComponent para representar arquivos.
+
+3. Classe Directory (Diretório) - implementação da interface FileSystemComponent para representar diretórios que podem conter outros componentes do sistema de gerenciamento de arquivos.
+
+4. Classe FileSystem (Sistema de Arquivo) - implementação do sistema de gerenciamento de arquivos com um diretório raiz e métodos para adicionar e remover componentes.
+
+5. Casos de teste: Os casos de teste para verificar se o sistema de gerenciamento de arquivos está funcionando corretamente.
+
+Nesse exemplo de teste no arquivo "FileSystem.java", o sistema de gerenciamento de arquivos é criado é adicionado um arquivo diretamente na raiz, outro arquivo e um diretório com um arquivo dentro. O arquivo adicionado ao diretório tem tamanho 30, então o tamanho total do sistema de gerenciamento de arquivos deve ser 40 (10 do arquivo "file1" e 30 do arquivo "file3").
+
+Depois, o arquivo "file2" é removido e o tamanho do sistema é verificado usando o método getSize() da classe FileSystem, que deve retornar o valor esperado de 40. O método assertEquals() é usado para verificar se o tamanho retornado pelo sistema de gerenciamento de arquivos é igual ao valor esperado.
